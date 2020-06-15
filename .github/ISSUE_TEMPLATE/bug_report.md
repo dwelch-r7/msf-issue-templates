@@ -8,30 +8,48 @@ labels: "type: bug"
   Please fill out each section below, otherwise, your issue will be closed. This info allows Gatsby maintainers to diagnose (and fix!) your issue as quickly as possible.
 
   Useful Links:
-  - Documentation: https://www.gatsbyjs.org/docs/
-  - How to File an Issue: https://www.gatsbyjs.org/contributing/how-to-file-an-issue/
+  - Wiki: https://github.com/rapid7/metasploit-framework/wiki
 
-  Before opening a new issue, please search existing issues: https://github.com/gatsbyjs/gatsby/issues
+  Before opening a new issue, please search existing issues: https://github.com/rapid7/metasploit-framework/issues
 -->
 
-## Description
+## Steps to reproduce
 
-Describe the issue that you're seeing.
+How'd you do it?
 
-### Steps to reproduce
+1. ...
+2. ...
 
-Clear steps describing how to reproduce the issue. Please please please link to a demo project if possible, this makes your issue _much_ easier to diagnose (seriously).
+This section should also tell us any relevant information about the
+environment; for example, if an exploit that used to work is failing,
+tell us the victim operating system and service versions.
 
-How to Make a Minimal Reproduction: https://www.gatsbyjs.org/contributing/how-to-make-a-reproducible-test-case/
-
-### Expected result
+## Expected behavior
 
 What should happen?
 
-### Actual result
+## Current behavior
 
-What happened.
+What happens instead?
 
-### Environment
+You might also want to check the last ~1k lines of
+`/opt/metasploit/apps/pro/engine/config/logs/framework.log` or
+`~/.msf4/logs/framework.log` for relevant stack traces
 
-Run `gatsby info --clipboard` in your project directory and paste the output here.
+
+## System stuff
+
+### Metasploit version
+
+Get this with the `version` command in msfconsole (or `git log -1 --pretty=oneline` for a source install).
+
+### I installed Metasploit with:
+- [ ] Kali package via apt
+- [ ] Omnibus installer (nightly)
+- [ ] Commercial/Community installer (from http://www.rapid7.com/products/metasploit/download.jsp)
+- [ ] Source install (please specify ruby version)
+
+### OS
+
+What OS are you running Metasploit on?
+
